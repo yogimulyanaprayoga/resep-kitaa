@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\BlogPostController;
@@ -45,3 +46,8 @@ Route::post('/recipes', [RecipeController::class, 'deteksiMakanan'])->name('reci
 
 Route::get('/blog', [BlogPostController::class, 'index'])->name('web.blog.index');
 Route::get('/blog/{slug}', [BlogPostController::class, 'show'])->name('web.blog.show');
+
+Route::get('/link-storage', function () {
+    Artisan::call('storage:link');
+    return '✅ Storage linked!';
+});
