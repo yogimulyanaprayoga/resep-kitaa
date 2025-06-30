@@ -36,12 +36,14 @@ class CarouselResource extends Resource
                 FileUpload::make('image_desktop')
                     ->label('Gambar Desktop')
                     ->image()
+                    ->disk('public_path')
                     ->directory('carousels')
                     ->required(),
 
                 FileUpload::make('image_mobile')
                     ->label('Gambar Mobile/Tablet')
                     ->image()
+                    ->disk('public_path')
                     ->directory('carousels')
                     ->required(),
                 TextInput::make('order')
