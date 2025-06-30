@@ -30,14 +30,14 @@
   <section class="sr-fade-up relative overflow-visible py-20">
     <!-- Dekorasi kiri atas -->
     <img src="{{ asset('images/elements/pizza.png') }}" alt="Decoration Top Left"
-      class="w-15 pointer-events-none absolute left-10 top-10 z-20 opacity-50 md:w-20 lg:w-28" />
+      class="pointer-events-none absolute left-10 top-10 z-20 w-16 opacity-50 md:w-20 lg:w-28" />
 
     <!-- Dekorasi kanan bawah -->
     <img src="{{ asset('images/elements/shawarma.png') }}" alt="Decoration Bottom Right"
-      class="w-15 pointer-events-none absolute bottom-10 right-10 z-20 opacity-50 md:w-20 lg:w-28" />
+      class="pointer-events-none absolute bottom-10 right-10 z-20 w-16 opacity-50 md:w-20 lg:w-28" />
 
     <!-- Konten utama (dengan border rounded) -->
-    <div class="wrapper rounded-4xl relative z-10 overflow-hidden bg-gradient-to-br from-sky-400 to-sky-200">
+    <div class="wrapper relative z-10 overflow-hidden rounded-3xl bg-gradient-to-br from-sky-400 to-sky-200">
       <div class="mx-auto flex flex-col items-center justify-between gap-12 py-16 md:flex-row">
         <!-- Gambar kiri -->
         <div class="sr-item w-full md:w-1/2">

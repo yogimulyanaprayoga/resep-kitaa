@@ -38,7 +38,7 @@
         <button
           class="inline-block rounded-full bg-[#374552] px-6 py-3 font-semibold text-white transition hover:bg-[#2b3947]"
           onclick="my_modal_3.showModal()">Bantuan Pengguna</button>
-        <dialog id="my_modal_3" class="modal">
+        <dialog id="my_modal_3" class="modal rounded-3xl p-6">
           <div class="modal-box">
             <form method="dialog">
               <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
